@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="CSS/ex11.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h2>EVENT REGISTRATION FORM</h2>
+        </header>
+
+        <form>
+            <div class="campo-grupo">
+                <label>Name</label>
+                <div class="inputs-lado">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="campo-grupo">
+                <label>Company</label>
+                <input type="text" class="input-cheio">
+            </div>
+
+            <div class="campo-grupo">
+                <label>Email</label>
+                <input type="email" class="input-cheio">
+            </div>
+
+            <div class="campo-grupo">
+                <label>Phone</label>
+                <div class="inputs-lado">
+                    <input type="text" style="width: 80px;" placeholder="Area Code">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+            </div>
+
+            <div class="campo-grupo">
+                <label>Subject</label>
+                <select class="input-cheio">
+                    <option>Choose option</option>
+                </select>
+            </div>
+
+            <div class="radio-secao">
+                <p>Are you an existing customer?</p>
+                <input type="radio" name="status" id="yes"> <label for="yes" class="label-normal">Yes</label>
+                <input type="radio" name="status" id="no"> <label for="no" class="label-normal">No</label>
+            </div>
+
+            <button type="submit" class="botao">REGISTER</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

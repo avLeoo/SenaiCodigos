@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background: linear-gradient(135deg,#4cc3c7,#2c8fb7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.container{
+    width:1100px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.form-area{
+    width:600px;
+    color:white;
+}
+
+.form-area h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.form-area p{
+    font-size:14px;
+    margin-bottom:30px;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.row label{
+    width:150px;
+}
+
+.name-group{
+    display:flex;
+    gap:10px;
+    width:330px;
+}
+
+.name-group input{
+    flex:1;
+}
+
+.phone-group{
+    display:flex;
+    gap:10px;
+    width:330px;
+}
+
+.phone-group input{
+    flex:1;
+}
+
+.full{
+    width:330px;
+}
+
+.row input,
+.row select{
+    padding:10px;
+    border:none;
+    border-radius:3px;
+    width:150px;
+}
+
+.row textarea{
+    width:330px;
+    height:90px;
+    border:none;
+    border-radius:3px;
+    padding:10px;
+}
+
+.full{
+    width:330px !important;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:1px solid white;
+    background:transparent;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    color:#2c8fb7;
+}

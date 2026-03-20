@@ -1,0 +1,55 @@
+body{
+    background-color: rgba(111, 134, 160, 0.966);
+}
+
+h2{
+    font-family: Arial;
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(70, 34, 199);
+}
+
+h4{
+    font-size: 36px;
+    color: #FF0000;
+    font-family: Calibri;
+}
+
+p{
+    font-family: Arial;
+    color: purple;
+    font-size: 24px;
+}
+
+.titulo1{
+    font-family: Arial;
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(182, 40, 211);
+}
+
+.subtitulo1{
+    font-size: 36px;
+    color: #b3cf15;
+    font-family: Calibri;
+}
+
+.paragrafo1, .paragrafo2, .paragrafo3{
+    font-family: Arial;
+    font-size: 24px;
+}
+
+.paragrafo1{
+    color: rgb(234, 0, 255);
+    text-align: right;
+}
+
+.paragrafo2{
+    color: purple;
+    text-align: center;
+}
+
+.paragrafo3{
+    color: green;
+    text-align: left;
+}
