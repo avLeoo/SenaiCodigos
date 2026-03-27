@@ -1,0 +1,47 @@
+table{
+    border-collapse: collapse; /*Elimina espaços entre as tabela*/
+    border-spacing: 0; /*Elimina o espaço das bordas*/
+    font-size: 20px;
+    font-family: arial;
+    width: 500px;
+    color: rgb(141, 141, 141);
+}
+
+tr{
+    line-height: 40px;
+    border-bottom: solid 2px #d8d8d8;
+}
+
+table tr:nth-child(odd){ /*odd é para trabalhar com impar e evené para par*/
+    background-color: #f0f0f0;
+}
+
+tr:first-child{
+    background-color: #009579 !important;
+    color: white;
+}
+
+td{
+    padding-left: 10px;
+}
+
+.cab1 td:first-child{
+    border-radius: 8px 0px 0px 0px;
+}
+
+.cab1 td:last-child{
+    border-radius: 0px 8px 0px 0px;
+}
+
+tr:last-child{
+    border-bottom: solid 2px #009579;
+}
+
+table tr:nth-child(odd){ /*odd é para trabalhar com impar e evené para par*/
+    background-color: #f0f0f0;
+}
+
+.ln2{
+    color: #009579;
+    font-weight: bold;
+}
