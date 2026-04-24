@@ -1,0 +1,79 @@
+.login{
+    position: relative;
+    margin: 40px;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+}
+
+.formulario {
+    h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .inp_login {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #cfcfcf;
+        border-radius: 4px;
+        outline: none;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+}
+
+.inp_login{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.link_esqueceu{
+    font-weight: bold;
+    color: #ff009c;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bt_entrar {
+  background-color: #abacab;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cadastro {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.cadastro a {
+  color: #ff0080;
+  text-decoration: none;
+}
