@@ -56,14 +56,26 @@ function mascaraDdd(id){
 function mascaraCel(id){
     let campo = document.getElementById(id);
     let valor = campo.value.replace(/\D/g, "");
+    if(valor.length > 9){
+        valor = valor.slice(0, 9);
+    }
+
+    if(valor.length >= 6){
+        campo.value = valor.replace(/^(\d{5})(\d{1,4})$/, "$1-$2"); 
+    }else{
+        campo.value = valor;
+    }
+}
+
+function mascaraTel(id){
+    let campo = document.getElementById(id);
+    let valor = campo.value.replace(/\D/g, "");
     if(valor.length > 8){
-        valor = valor.slice(0, 8);
+        valor = valor.slice(0, 8); 
     }
 
     if(valor.length >= 5){
-        campo.value = valor.replace(/^(\d{4})(\d{1,4})$/, "$1 - $2"); 
-    }else if(valor.length >= 3){
-        campo.value = valor.replace(/^(\d{1,4})$/, "$1"); 
+        campo.value = valor.replace(/^(\d{4})(\d{1,4})$/, "$1-$2"); 
     }else{
         campo.value = valor;
     }

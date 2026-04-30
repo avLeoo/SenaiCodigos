@@ -15,6 +15,7 @@
     <script type="text/javascript" src="js/jquery_4_0.js"></script>
     <script type="text/javascript" src="js/cadastro.js"></script>
     <script type="text/javascript" src="js/mascara.js"></script>
+    <script type="text/javascript" src="js/validacao.js"></script>
 
     <link rel="shortcut icon" type="image/x-icon" media="all" href="images/favicon.png" />
 
@@ -74,7 +75,7 @@
                         </div>
                         <div class="box_form_celular">
                             <b>Celular *</b>
-                            <input type="text" name="celular" placeholder="0000 - 0000" maxlenght="9" class="inp_cad5" id="ncel_id" onkeyup="mascaraCel(this.id);"/>
+                            <input type="text" name="celular" placeholder="00000-0000" maxlenght="10" class="inp_cad5" id="ncel_id" onkeyup="mascaraCel(this.id);"/>
                         </div>
                         <div class="box_form_ddd2">
                             <b>DDD *</b>
@@ -82,7 +83,7 @@
                         </div>
                         <div class="box_form_tel">
                             <b>Telefone *</b>
-                            <input type="text" name="tel" placeholder="0000 - 0000" maxlenght="9" class="inp_cad5" id="ntel_id" onkeyup="mascaraCel(this.id);"/>
+                            <input type="text" name="tel" placeholder="0000-0000" maxlenght="9" class="inp_cad5" id="ntel_id" onkeyup="mascaraTel(this.id);"/>
                         </div>
                     </div>
                     
@@ -160,7 +161,7 @@
                 <form action="" method="" class="form2">
                     <div class="box_form">
                         <b>E-mail*</b>
-                        <input type="text" name="email" placeholder="Informe o e-mail" class="inp_cad1" id="email_id"/>
+                        <input type="text" name="email" placeholder="Informe o e-mail" class="inp_cad1" id="email_id" onclick="validarEmail(this.id);" />
                     </div>
 
                     <div class="box_form">
@@ -175,17 +176,19 @@
 
                     <div class="box_form">
                         <b>Senha*</b>
-                        <input type="text" name="senha" placeholder="Insira a senha" class="inp_cad1" id="senha_id"/>
+                        <input type="password" name="senha" placeholder="Insira a senha" class="inp_cad1" id="senha_id"/>
                         <div class="box_bt_mostrar">
-                            <img src="images/eye-slash.png" alt="Mostra Senha" class="bt_mostra_senha" />
+                            <img src="images/eye-slash.png" alt="Mostra Senha" class="bt_mostra_senha" id="pass_mostra1" onclick="mostraSenha1(this.id);" />
+                            <img src="images/eye-open.png" alt="Oculta Senha" class="bt_mostra_senha" id="pass_oculta1" onclick="ocultaSenha1(this.id);" />
                         </div>
                     </div>
 
                     <div class="box_form">
                         <b>Confirmar Senha*</b>
-                        <input type="text" name="senha2" placeholder="Insira a senha novamente" class="inp_cad1" id="cfsenha_id"/>
+                        <input type="password" name="senha2" placeholder="Insira a senha novamente" class="inp_cad1" id="cfsenha_id"/>
                         <div class="box_bt_mostrar">
-                            <img src="images/eye-slash.png" alt="Mostra Senha" class="bt_mostra_senha" />
+                            <img src="images/eye-slash.png" alt="Mostra Senha" class="bt_mostra_senha" id="pass_mostra2" onclick="mostraSenha2(this.id);" />
+                            <img src="images/eye-open.png" alt="Oculta Senha" class="bt_mostra_senha" id="pass_oculta2" onclick="ocultaSenha2(this.id);"/>
                         </div>
                     </div>
                     
@@ -194,7 +197,7 @@
 
             <div class="cadastro_box3">
                 <div class="termo_cpf">
-                    <input type="checkbox" class="inp_ck_termos" />
+                    <input type="checkbox" class="inp_ck_termos" id="validacao_id"/>
                     <label> Li, compreendi e concordo com as <a href="">Condições Gerais</a>, inclusive quanto à proteção de dados pessoais, suas finalidades e hipóteses de tratamento de acordo com a nossa <a href="">Política de Privacidade</a>. Autorizo também o recebimento de e-mails promocionais da Marisa.</label>
                     <span class="bt_finaliza" onclick="enviarDadosCpf();">Finalizar Cadastro</span>
                 </div>
