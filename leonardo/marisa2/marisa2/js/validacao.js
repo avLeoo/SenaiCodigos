@@ -166,7 +166,7 @@ function validarGenero(){
     }
 }
 
-function validarNomePf(){
+function validarNomePf(id){
     let nome = document.getElementById(id).value;
     if(nome.length >= 5){
         return true;

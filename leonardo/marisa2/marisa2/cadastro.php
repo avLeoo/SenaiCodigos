@@ -200,6 +200,7 @@
                     <input type="checkbox" class="inp_ck_termos" id="validacao_id"/>
                     <label> Li, compreendi e concordo com as <a href="">Condições Gerais</a>, inclusive quanto à proteção de dados pessoais, suas finalidades e hipóteses de tratamento de acordo com a nossa <a href="">Política de Privacidade</a>. Autorizo também o recebimento de e-mails promocionais da Marisa.</label>
                     <span class="bt_finaliza" onclick="enviarDadosCpf();">Finalizar Cadastro</span>
+                    <div id="retornoCpf"></div>
                 </div>
 
                 <div class="termo_cnpj">
