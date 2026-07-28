@@ -1,0 +1,405 @@
+.hero-professores {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 520px;
+    padding: 80px 0;
+
+    background-image: url("imagens/img6.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.hero-professores-sombra {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.75) 48%,
+        rgba(0, 0, 0, 0.35) 100%
+    );
+}
+
+.hero-professores-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-professores h1 {
+    max-width: 750px;
+    margin-bottom: 25px;
+
+    font-size: 64px;
+    line-height: 1;
+}
+
+.hero-professores h1 span {
+    display: block;
+    color: #dc3545;
+}
+
+.hero-professores p:not(.subtitulo) {
+    max-width: 620px;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.apresentacao-professores {
+    background-color: #163034;
+}
+
+.apresentacao-professores h2 {
+    margin-bottom: 25px;
+    font-size: 42px;
+}
+
+.apresentacao-professores h2 span {
+    color: #dc3545;
+}
+
+.apresentacao-professores p {
+    line-height: 1.7;
+    color: #e4e4e4;
+}
+
+.imagem-equipe {
+    position: relative;
+    padding: 12px;
+
+    border: 1px solid #5c7275;
+}
+
+.imagem-equipe::before {
+    content: "";
+
+    position: absolute;
+    top: -15px;
+    right: -15px;
+
+    width: 130px;
+    height: 130px;
+
+    border-top: 4px solid #dc3545;
+    border-right: 4px solid #dc3545;
+}
+
+.imagem-equipe img {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+}
+
+.diferenciais-professores {
+    margin-top: 30px;
+}
+
+.diferencial-professor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.diferencial-professor i {
+    color: #dc3545;
+}
+
+.diferencial-professor span {
+    color: #ffffff;
+}
+
+.equipe-professores {
+    background-color: #120708;
+}
+
+.titulo-secao-professores {
+    max-width: 720px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.titulo-secao-professores h2 {
+    margin-bottom: 18px;
+    font-size: 42px;
+}
+
+.titulo-secao-professores h2 span {
+    color: #dc3545;
+}
+
+.titulo-secao-professores > p:last-child {
+    color: #cccccc;
+}
+
+.card-professor {
+    height: 100%;
+
+    background-color: #1c1c1c;
+    border: 1px solid #333333;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card-professor:hover {
+    transform: translateY(-8px);
+
+    border-color: #dc3545;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.imagem-professor {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-professor img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.card-professor:hover .imagem-professor img {
+    transform: scale(1.05);
+}
+
+.especialidade-professor {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+
+    padding: 7px 12px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.conteudo-card-professor {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 310px;
+    padding: 25px;
+}
+
+.conteudo-card-professor h3 {
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+
+.cargo-professor {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.conteudo-card-professor > p:not(.cargo-professor) {
+    flex-grow: 1;
+
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.redes-professor {
+    display: flex;
+    gap: 10px;
+
+    margin: 18px 0;
+}
+
+.redes-professor a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 38px;
+    height: 38px;
+
+    text-decoration: none;
+
+    border: 1px solid #555555;
+    color: #ffffff;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.redes-professor a:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.chamada-professores {
+    padding: 65px 0;
+
+    background-color: #163034;
+    border-top: 2px solid #dc3545;
+}
+
+.chamada-professores h2 {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.chamada-professores p:not(.subtitulo) {
+    margin-bottom: 0;
+    color: #dddddd;
+}
+
+.modal-professor {
+    background-color: #171717;
+    color: #ffffff;
+
+    border: 1px solid #dc3545;
+    border-radius: 0;
+}
+
+.modal-professor .modal-header {
+    border-bottom: 1px solid #333333;
+}
+
+.modal-professor .modal-footer {
+    border-top: 1px solid #333333;
+}
+
+.modal-professor h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    font-size: 19px;
+}
+
+.modal-professor p,
+.modal-professor li {
+    color: #cccccc;
+}
+
+.modal-professor li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+
+    .hero-professores {
+        min-height: 480px;
+    }
+
+    .hero-professores h1 {
+        font-size: 52px;
+    }
+
+    .imagem-equipe img {
+        height: 380px;
+    }
+
+    .chamada-professores {
+        text-align: center;
+    }
+
+    .chamada-professores p:not(.subtitulo) {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-professores {
+        min-height: 450px;
+        padding: 60px 0;
+
+        text-align: center;
+    }
+
+    .hero-professores-sombra {
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    .hero-professores h1 {
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 43px;
+    }
+
+    .hero-professores p:not(.subtitulo) {
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 16px;
+    }
+
+    .apresentacao-professores h2,
+    .titulo-secao-professores h2 {
+        font-size: 34px;
+    }
+
+    .imagem-equipe img {
+        height: 330px;
+    }
+
+    .imagem-professor img {
+        height: 360px;
+    }
+
+    .conteudo-card-professor {
+        min-height: auto;
+    }
+
+    .chamada-professores h2 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-professores {
+        min-height: 420px;
+    }
+
+    .hero-professores h1 {
+        font-size: 35px;
+    }
+
+    .imagem-equipe img {
+        height: 280px;
+    }
+
+    .imagem-professor img {
+        height: 310px;
+    }
+
+    .conteudo-card-professor {
+        padding: 22px;
+    }
+}
