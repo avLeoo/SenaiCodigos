@@ -6,11 +6,8 @@ if ($parte === "header") {
 ?>
 
     <header class="cabecalho">
-
         <nav class="navbar navbar-expand-lg navbar-dark">
-
             <div class="container">
-
                 <a
                     class="navbar-brand"
                     href="index.html#inicio"
@@ -38,29 +35,23 @@ if ($parte === "header") {
                     class="collapse navbar-collapse"
                     id="menuPrincipal"
                 >
-
                     <ul class="navbar-nav ms-auto align-items-lg-center">
-
                         <li class="nav-item">
                             <a
                                 class="nav-link"
-                                href="index.html#inicio"
+                                href="index.html"
                             >
                                 Home
                             </a>
                         </li>
-
                         <li class="nav-item">
-
                             <a
                                 class="nav-link"
                                 href="alta-forma.html"
                             >
                                 Alta Forma
                             </a>
-
                         </li>
-
                         <li class="nav-item">
                             <a
                                 class="nav-link"
@@ -69,7 +60,6 @@ if ($parte === "header") {
                                 Planos
                             </a>
                         </li>
-
                         <li class="nav-item">
                             <a
                                 class="nav-link"
@@ -78,26 +68,19 @@ if ($parte === "header") {
                                 Professores
                             </a>
                         </li>
-
                         <li class="nav-item">
                             <a
                                 class="nav-link"
-                                href="index.html#contato"
+                                href="fale-conosco.html"
                             >
                                 Fale conosco
                             </a>
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
         </nav>
-
     </header>
-
 <?php
 }
 
@@ -105,12 +88,9 @@ elseif ($parte === "footer") {
 ?>
 
     <footer class="rodape" id="contato">
-
         <div class="container">
-
             <div class="row g-5">
                 <div class="col-md-6 col-lg-4">
-
                     <img
                         src="imagens/logo.jpeg"
                         class="logo-rodape"
@@ -123,13 +103,17 @@ elseif ($parte === "footer") {
 
                     <div class="d-flex gap-3 mt-4">
                         <a
-                            href="#"
+                            href="https://www.instagram.com/leoovieira/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             aria-label="Instagram da Alta Forma"
                         >
                             <i class="bi bi-instagram fs-4"></i>
                         </a>
                         <a
-                            href="#"
+                            href="https://www.facebook.com/share/18D3D4QBdj/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             aria-label="Facebook da Alta Forma"
                         >
                             <i class="bi bi-facebook fs-4"></i>
@@ -147,7 +131,7 @@ elseif ($parte === "footer") {
                     <h3>
                         Alta Forma
                     </h3>
-                    <a href="index.html#inicio">
+                    <a href="index.html">
                         Home
                     </a>
                     <a href="alta-forma.html">
@@ -159,7 +143,9 @@ elseif ($parte === "footer") {
                     <a href="professores.html">
                         Professores
                     </a>
-
+                    <a href="fale-conosco.html">
+                        Fale Conosco
+                    </a>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
